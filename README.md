@@ -1,7 +1,11 @@
 # GPTFLIX 
  - Create React App 
  - Configure Tailwind to React app 
- 
+ - Header
+ - Login 
+ - Signup 
+ - form vaidation 
+ - Firebase deployment to production 
  # Features
    - Login/Sign up
        -login/signup form 
