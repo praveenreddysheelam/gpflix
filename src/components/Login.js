@@ -38,7 +38,6 @@ const Login = () => {
                 email:email,
                 displayName:displayName,
               }));
-        navigate("/browse");
         // ...
       }).catch((error) => {
         // An error occurred
@@ -59,7 +58,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in 
           const user = userCredential.user;
-          navigate("/browse");
           // ...
         })
         .catch((error) => {
@@ -88,4 +86,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login;
