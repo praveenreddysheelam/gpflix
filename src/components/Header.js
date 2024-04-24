@@ -48,7 +48,7 @@ const Header = () => {
         {signedIn &&
         <div className='flex p-2'>
             <img className='w-12 h-12' alt='user-icon' src=  "https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdpkabKqQAxyWzo6QW_ZnPz1IZLqlmNfK-t4L1VIeV1DY00JhLo_LMVFp936keDxj-V5UELAVJrU--iUUY2MaDxQSSO-0qw.png?r=e6e"/>
-            <button onClick={handleSignOut}> (Sign Out) </button>
+            <button className='font-bold text-white' onClick={handleSignOut}> (Sign Out) </button>
         </div>}
     </div>
   )
