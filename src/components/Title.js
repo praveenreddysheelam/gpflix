@@ -7,7 +7,7 @@ const Title = ({title,overview}) => {
         <p>{overview}</p>
         <div>
             <button>Play</button>
-            <button>More Info</button>
+            <button>More Info 1</button>
         </div>
     </div>
   )
