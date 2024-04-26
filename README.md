@@ -53,7 +53,7 @@ module.exports = {
 ```js
 npm start
 ```
-Live Demo : [Live Demo](https://okneeraj.github.io/netflix-gpt "Live Demo")
+Live Demo : [Live Demo](https://gptflix-a05c6.web.app/ "Live Demo")
 
 ## Screen Shot
 
@@ -65,16 +65,16 @@ Live Demo : [Live Demo](https://okneeraj.github.io/netflix-gpt "Live Demo")
 
 - Browse Page
 
-  ![Browse Page](https://okneeraj.github.io/netflix-gpt/screenshot/04-Browse.png)
+  ![Browse Page](https://github.com/praveenreddysheelam/gpflix/blob/master/src/images/Browse.png)
 
 - Movie List
 
-  ![Movie List](https://okneeraj.github.io/netflix-gpt/screenshot/05-Movie-List.png)
+  ![Movie List](https://github.com/praveenreddysheelam/gpflix/blob/master/src/images/suggestion.png)
 
 
 - GPT Search Page
 
-  ![Search Page](https://okneeraj.github.io/netflix-gpt/screenshot/07-Search.png)
+  ![Search Page](https://github.com/praveenreddysheelam/gpflix/blob/master/src/images/GPTSearch.png)
 
 
 # GPTFLIX 
