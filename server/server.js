@@ -5,7 +5,9 @@ require('dotenv').config();
 const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
 const openai = new OpenAI({
     apiKey: process.env.API_KEY,
   });
