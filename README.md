@@ -59,7 +59,7 @@ Live Demo : [Live Demo](https://okneeraj.github.io/netflix-gpt "Live Demo")
 
 - Landing Page
 
-  ![Landing Page](https://okneeraj.github.io/netflix-gpt/screenshot/01-Landing.png)
+  ![Landing Page](https://github.com/praveenreddysheelam/gpflix/blob/master/src/images/Landingpage.png)
 
 
 
