@@ -8,15 +8,13 @@ Movies recomandation with AI.
 - Install react app using create-react-app (CRA)
 
 ```js
-npx create-react-app netflix-gpt
+npx create-react-app gptflix
 ```
 
 - Create `.env` file and put configure
 
 ```js
-REACT_APP_BASE_URL = YOUR_APPLICATION_BASE_URL; // http://localhost:300
 REACT_APP_OPENAI_KEY = YOUR_API_KEY_WILL_HERE;
-REACT_APP_TMDB_KEY = YOUR_API_KEY_WILL_HERE;
 ```
 
 - Install and init tailwind css
