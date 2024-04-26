@@ -1,4 +1,4 @@
-import openai from "../utils/openai";
+//import openai from "../utils/openai";
 import React, { useRef } from 'react'
 import lang from '../utils/languageConstants';
 import { useDispatch, useSelector } from 'react-redux';
@@ -26,20 +26,30 @@ const GPTSearchBar = () => {
         searchText.current.value +
         ". only give me names of 5 movies, comma seperated like the example result given ahead. Example Result: Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";
   
-       const gptResults= await openai.chat.completions.create({
-        messages: [{ role: "user", content: gptQuery }],
-        model: "gpt-3.5-turbo",
-      });
-      if (!gptResults.choices) {
+      // const gptResults= await openai.chat.completions.create({
+       // messages: [{ role: "user", content: gptQuery }],
+      //  model: "gpt-3.5-turbo",
+      //});
+      
+      //if (!gptResults.choices) {
         // TODO: Write Error Handling
-      }
-      console.log(gptResults.choices?.[0]?.message?.content);
-      const gptMovies = gptResults.choices?.[0]?.message?.content.split(",");
+     // }
+      //console.log(gptResults.choices?.[0]?.message?.content);
+      const data= await fetch('http://localhost:3001/api/gpt',{
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query: gptQuery }),
+      });
+      const gptResults = await data.json();
+      const gptMovies = gptResults?.result?.split(",");
+      console.log(gptMovies);
       const promiseArray = gptMovies.map((movie) => searchMovieTMDB(movie));
       const tmdbResults = await Promise.all(promiseArray);
       dispatch(
-        addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults })
-      );  
+      addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults })
+       );  
 
     }
   return (
