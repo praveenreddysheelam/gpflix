@@ -53,6 +53,30 @@ module.exports = {
 ```js
 npm start
 ```
+Live Demo : [Live Demo](https://okneeraj.github.io/netflix-gpt "Live Demo")
+
+## Screen Shot
+
+- Landing Page
+
+  ![Landing Page](https://okneeraj.github.io/netflix-gpt/screenshot/01-Landing.png)
+
+
+
+- Browse Page
+
+  ![Browse Page](https://okneeraj.github.io/netflix-gpt/screenshot/04-Browse.png)
+
+- Movie List
+
+  ![Movie List](https://okneeraj.github.io/netflix-gpt/screenshot/05-Movie-List.png)
+
+
+- GPT Search Page
+
+  ![Search Page](https://okneeraj.github.io/netflix-gpt/screenshot/07-Search.png)
+
+
 # GPTFLIX 
  - Create React App 
  - Configure Tailwind to React app 
